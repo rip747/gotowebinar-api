@@ -28,9 +28,9 @@ The following is an example of creating a registrant for a webinar:
   <!--- create a struct that will hold information about the registrant --->
   <cfset webinar_key = "<id of the webinar>">
   <cfset params = {}>
-  <cfset params["email"] = Email>
-  <cfset params["firstName"] = FirstName>
-  <cfset params["lastName"] = LastName>
+  <cfset params["email"] = "<email of the registrant>">
+  <cfset params["firstName"] = "<first name of the registrant>">
+  <cfset params["lastName"] = "<last name of the registrant>">
 	
   <!--- call the create_registrant method of the API passing the registrant information --->
   <cftry>
