@@ -26,6 +26,7 @@ The following is an example of creating a registrant for a webinar:
   <cfset webinarObj = createObject("_lib.gotowebinar").init(AccessToken,OrganizerKey)>
 
   <!--- create a struct that will hold information about the registrant --->
+  <cfset webinar_key = "<id of the webinar>">
   <cfset params = {}>
   <cfset params["email"] = Email>
   <cfset params["firstName"] = FirstName>
@@ -33,7 +34,7 @@ The following is an example of creating a registrant for a webinar:
 	
   <!--- call the create_registrant method of the API passing the registrant information --->
   <cftry>
-    <cfset result = webinarObj.create_registrant(ExternalId, params)>
+    <cfset result = webinarObj.create_registrant(webinar_key, params)>
     <cfcatch type="any">
       <cfset result = {}>
     </cfcatch>
