@@ -1,6 +1,6 @@
 # gotowebinar-api
 
-A ColdFusion API for the GotoWebinar
+A ColdFusion API for GotoWebinar
 
 ## Usage
 
